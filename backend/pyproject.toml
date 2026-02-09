@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "kyuuyomeisai"
+version = "1.0.0"
+description = "給与明細管理システム"
+authors = ["NakamuraService"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.0"}
+asyncpg = "^0.30.0"
+alembic = "^1.14.0"
+pydantic = "^2.0.0"
+pydantic-settings = "^2.0.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+redis = "^5.0.0"
+python-multipart = "^0.0.18"
+reportlab = "^4.0.0"
+openpyxl = "^3.1.0"
+python-magic = "^0.4.27"
+slowapi = "^0.1.9"
+httpx = "^0.28.0"
+cryptography = "^44.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.24.0"
+black = "^24.0.0"
+ruff = "^0.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
