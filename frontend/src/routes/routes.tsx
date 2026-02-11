@@ -104,6 +104,16 @@ const appRoutes: ExtendedRouteObject[] = [
     },
   },
   {
+    path: "payroll-records/:id",
+    element: <PayrollRecordsPage />,
+    meta: {
+      title: "給与明細詳細",
+      icon: "Description",
+      inMenu: false,
+      requiredRoles: ["super_admin", "admin", "accountant", "employee"],
+    },
+  },
+  {
     path: "year-end-adjustment",
     element: <YearEndAdjustmentPage />,
     meta: {
