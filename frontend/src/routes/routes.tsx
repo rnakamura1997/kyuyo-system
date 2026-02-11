@@ -1,7 +1,6 @@
 /** ルーティング定義（メタ情報付き自動メニュー生成方式） */
 
-import React, { lazy } from "react";
-import type { RouteObject } from "react-router-dom";
+import { lazy, type ReactNode } from "react";
 
 // ページコンポーネント（遅延読み込み）
 const DashboardPage = lazy(() => import("../pages/DashboardPage"));
@@ -25,7 +24,10 @@ export interface RouteMetadata {
   group?: string;
 }
 
-export interface ExtendedRouteObject extends RouteObject {
+export interface ExtendedRouteObject {
+  path?: string;
+  element?: ReactNode;
+  index?: boolean;
   meta?: RouteMetadata;
   children?: ExtendedRouteObject[];
 }
