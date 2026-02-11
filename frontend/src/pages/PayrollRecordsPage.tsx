@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Box, Paper, Typography, Button, Table, TableBody, TableCell,
-  TableContainer, TableHead, TableRow, Chip, Grid, Card, CardContent,
-  CircularProgress, Divider,
+  TableHead, TableRow, Chip, Grid, Card, CardContent,
+  CircularProgress,
 } from '@mui/material';
-import { ArrowBack, PictureAsPdf, Print } from '@mui/icons-material';
+import { ArrowBack, Print } from '@mui/icons-material';
 import api from '@/services/api';
 
 interface PayrollItem {

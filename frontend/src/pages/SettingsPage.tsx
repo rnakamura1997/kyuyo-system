@@ -5,7 +5,7 @@ import {
   DialogContent, DialogActions, TextField, Snackbar, Alert,
   CircularProgress, IconButton, Switch, FormControlLabel, Grid,
 } from '@mui/material';
-import { Add, Edit, Delete, Save } from '@mui/icons-material';
+import { Add, Edit, Delete } from '@mui/icons-material';
 import api from '@/services/api';
 
 interface TabPanelProps {

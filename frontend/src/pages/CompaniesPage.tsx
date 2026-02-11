@@ -1,6 +1,6 @@
 /** 会社管理ページ - CRUD */
 
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
   Box,
   Typography,
